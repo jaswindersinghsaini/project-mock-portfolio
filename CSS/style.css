@@ -1,0 +1,5 @@
+.portHeader{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+}
