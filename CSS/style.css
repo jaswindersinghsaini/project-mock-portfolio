@@ -1,18 +1,22 @@
-body{
+body {
+    display: flex;
+    flex-direction: column;
     background-image: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29saWQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     
+
 }
 
 .portHeader {
     background-image: url(https://images.unsplash.com/photo-1508615121316-fe792af62a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMwfHxiYWNrZ3JvdW5kfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
-    
-    height: 100px;
 
+    height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-header h1{
+header h1 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -20,94 +24,155 @@ header h1{
     font-size: 2em;
 }
 
-.headNavbar, a {
+.headNavbar,
+a {
     display: flex;
     justify-content: flex-end;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: ;
     list-style: none;
     padding: 5px 20px;
     text-decoration: none;
-    
+
 }
 
 .aboutMe {
-    border: 2px solid blue;
     color: aliceblue;
     height: 500px;
     width: 100%;
-       
+    margin: 10px 10px;
+    text-align: justify;
+
 }
 
-.aboutMe h1{
+.aboutMe h1 {
     text-align: left;
 }
+
 .aboutMe img {
     height: 400px;
     width: 50;
+    border: 2px solid grey;
+    border-radius: 50px;
+    margin: 10px;
     padding: 10px;
     float: left;
 }
 
+section {
+    float: left;
+}
 
-.myProjects{
-    border: 2px solid red;
-    height: 950px;
-    width: 80%;
+.myProjects {
+    
+    width: 75%;
     color: aliceblue;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-
-
+    margin: 10px;
+    
 }
 
-.ecommerceApp, .restaurantApp {
+.ecommerceApp,
+.restaurantApp {
     border: 2px solid pink;
+    border-radius: 10px;
     display: flex;
     text-align: justify;
-    padding: 2px;
+    padding: 12px;
     margin-top: 10px;
-    
+
 }
 
-.ecommerceApp img{
-    height: 400px;
+.ecommerceApp img {
+    height: 200px;
     width: 400px;
     padding: 10px;
-    
+
 }
 
-.financeApp, .libraryApp {
+.financeApp,
+.libraryApp {
     border: 2px solid pink;
+    border-radius: 10px;
     display: flex;
     justify-content: flex-end;
-    /* text-align: justify; */
     align-content: space-evenly;
-    padding: 2px;
+    padding: 12px;
     margin-top: 10px;
-    
+
 }
 
 
 
-.restaurantApp img, .financeApp img, .libraryApp img{
+.restaurantApp img,
+.financeApp img,
+.libraryApp img {
     height: 150px;
     width: 150px;
     padding: 0 10px;
-    
-    
+
+
 }
 
-figcaption{
+figcaption {
     text-align: center;
 }
 
-aside{
+aside {
     border: 2px solid green;
-    height: 950px;
+    border-radius: 10px;
     width: 20%;
-    align-content: flex-end;
+    margin: 50px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    color: white;
+    position: sticky;
+    top: 100px;
+
+       
+
+}
+
+.fa{
+    font-size: 100px;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
     
+       
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    
+  }
+
+.fa-twitter {
+    
+    background: #55ACEE;
+    color: white;
+   
+  }
+
+footer{
+    color: white;
+    border: 2px solid red;
+    height: 30px;
+    width:100vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
