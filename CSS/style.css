@@ -3,25 +3,30 @@ body {
     flex-direction: column;
     background-image: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29saWQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
-    
 
 }
 
 .portHeader {
     background-image: url(https://images.unsplash.com/photo-1508615121316-fe792af62a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMwfHxiYWNrZ3JvdW5kfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-    background-size: cover;
 
+    background-size: cover;
     height: 100px;
+    width: auto;
     display: flex;
     flex-direction: column;
+    
 }
 
 header h1 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    float: left;
     font-size: 2em;
+    margin-left: 10px;
+}
+header p{
+    margin-left: 10px;
+    
 }
 
 .headNavbar,
@@ -44,7 +49,9 @@ a {
     text-align: justify;
 
 }
-
+.aboutMe p{
+    margin: 20px;
+}
 .aboutMe h1 {
     text-align: left;
 }
@@ -59,26 +66,24 @@ a {
     float: left;
 }
 
-section {
-    float: left;
-}
-
 .myProjects {
-    
     width: 75%;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     margin: 10px;
-    
+    float: left;
+
 }
 
 .ecommerceApp,
 .restaurantApp {
     border: 2px solid pink;
+    background-color: rgba(100, 119, 134, 0.24);
     border-radius: 10px;
     display: flex;
-    text-align: justify;
+    justify-content: flex-start;
+    align-content: space-evenly;
     padding: 12px;
     margin-top: 10px;
 
@@ -94,6 +99,7 @@ section {
 .financeApp,
 .libraryApp {
     border: 2px solid pink;
+    background-color: rgba(100, 119, 134, 0.24);
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
@@ -112,7 +118,6 @@ section {
     width: 150px;
     padding: 0 10px;
 
-
 }
 
 figcaption {
@@ -120,8 +125,9 @@ figcaption {
 }
 
 aside {
-    border: 2px solid green;
-    border-radius: 10px;
+    
+    background-color: rgba(100, 119, 134, 0.24);
+    border-radius: 18px;
     width: 20%;
     margin: 50px 20px;
     padding: 10px;
@@ -133,46 +139,110 @@ aside {
     position: sticky;
     top: 100px;
 
-       
-
 }
 
-.fa{
+.fa {
     font-size: 100px;
     padding: 20px;
     width: 20%;
     text-align: center;
     text-decoration: none;
-    
-       
+
+
 }
 
 .fa-facebook {
     background: #3B5998;
     color: white;
-    
-  }
+
+}
 
 .fa-instagram {
     background: #125688;
     color: white;
-    
-  }
+
+}
 
 .fa-twitter {
-    
     background: #55ACEE;
     color: white;
-   
-  }
 
-footer{
+}
+
+footer {
     color: white;
-    border: 2px solid red;
+    background-color: rgba(90, 115, 146, 0.301);
+    border-radius: 18px;
+    /* border: 2px solid red; */
     height: 30px;
-    width:100vw;
+    width: auto;
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media (max-width: 1382px) {
+    body {
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+
+    header{
+        align-items: center;
+    
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMe img {
+        height: 20em;
+        width: 20em;
+
+    }
+
+    .aboutMe p {
+        display: none;
+
+    }
+
+    .aboutMe::after {
+        content: "Jaswinder Singh - For fast solutions with Web Development with HTML, CSS, Javascript and new web technologies.";
+        /* text-justify: auto; */
+
+    }
+
+    .myProjects {
+        display: flex;
+        align-items: center;
+        margin-left: 13%;
+
+    }
+
+    .ecommerceApp img {
+        height: 150px;
+        width: 150px;
+    }
+
+
+    aside {
+        float: left;
+        margin-left: 42%;
+        text-align: center;
+
+    }
+
+    footer {
+        height: 20vh;
+        width: auto;
+        flex-direction: column;
+
+    }
+
+
 }
