@@ -125,7 +125,6 @@ figcaption {
 }
 
 aside {
-    
     background-color: rgba(100, 119, 134, 0.24);
     border-radius: 18px;
     width: 20%;
@@ -173,7 +172,6 @@ footer {
     color: white;
     background-color: rgba(90, 115, 146, 0.301);
     border-radius: 18px;
-    /* border: 2px solid red; */
     height: 30px;
     width: auto;
     margin-top: 20px;
@@ -213,8 +211,7 @@ footer {
 
     .aboutMe::after {
         content: "Jaswinder Singh - For fast solutions with Web Development with HTML, CSS, Javascript and new web technologies.";
-        /* text-justify: auto; */
-
+        
     }
 
     .myProjects {
