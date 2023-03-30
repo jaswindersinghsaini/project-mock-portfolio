@@ -1,3 +1,7 @@
+:root {
+    --mqh1Color: rgb(211, 124, 138);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -14,7 +18,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 header h1 {
@@ -24,9 +28,10 @@ header h1 {
     font-size: 2em;
     margin-left: 10px;
 }
-header p{
+
+header p {
     margin-left: 10px;
-    
+
 }
 
 .headNavbar,
@@ -49,9 +54,11 @@ a {
     text-align: justify;
 
 }
-.aboutMe p{
+
+.aboutMe p {
     margin: 20px;
 }
+
 .aboutMe h1 {
     text-align: left;
 }
@@ -90,7 +97,7 @@ a {
 }
 
 .ecommerceApp img {
-    height: 200px;
+    height: 300px;
     width: 400px;
     padding: 10px;
 
@@ -108,8 +115,6 @@ a {
     margin-top: 10px;
 
 }
-
-
 
 .restaurantApp img,
 .financeApp img,
@@ -147,7 +152,6 @@ aside {
     text-align: center;
     text-decoration: none;
 
-
 }
 
 .fa-facebook {
@@ -172,7 +176,7 @@ footer {
     color: white;
     background-color: rgba(90, 115, 146, 0.301);
     border-radius: 18px;
-    height: 30px;
+    height: 60px;
     width: auto;
     margin-top: 20px;
     display: flex;
@@ -180,22 +184,35 @@ footer {
     align-items: center;
 }
 
-@media (max-width: 1382px) {
+@media (max-width: 1200px) {
     body {
         flex-wrap: wrap;
         flex-direction: column;
-       
+
     }
 
-    header{
+    header {
         align-items: center;
-    
+
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h1 {
+        font-size: xx-large;
+        color: var(--mqh1Color);
+    }
+
     .aboutMe {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: var(--mqh1Color);
     }
 
     .aboutMe img {
@@ -210,14 +227,17 @@ footer {
     }
 
     .aboutMe::after {
+        text-align: center;
         content: "Jaswinder Singh - For fast solutions with Web Development with HTML, CSS, Javascript and new web technologies.";
-        
+        font-size: x-large;
+
     }
 
     .myProjects {
         display: flex;
         align-items: center;
         margin-left: 13%;
+        color: var(--mqh1Color);
 
     }
 
@@ -226,11 +246,27 @@ footer {
         width: 150px;
     }
 
+    .ecommerceApp,
+    .restaurantApp {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .financeApp,
+    .libraryApp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figcaption {
+        color: rgb(196, 207, 41);
+        font-size: x-large;
+    }
 
     aside {
-        float: left;
-        margin-left: 42%;
-        text-align: center;
+        flex-direction: row;
+        width: auto;
+        font-size: large;
 
     }
 
@@ -238,6 +274,7 @@ footer {
         height: 20vh;
         width: auto;
         flex-direction: column;
+        font-size: x-large;
 
     }
 
