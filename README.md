@@ -8,7 +8,7 @@ Worked with HTML, CSS, Javascript, NodeJS, ReactJS and other web technologies.
 
 ## Link to my portfolio
 
-
+ https://jaswindersinghsaini.github.io/project-mock-portfolio/
 
 ## Deployed Projects
 Below are some of my deployed projects:
