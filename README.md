@@ -1,21 +1,48 @@
 # Project-Mock-Portfolio
 
+# Contributors : Self
 
-Description
-This is a portfolio 
+# Description
+Hello! This is Jaswinder Singh and my portfolio is about the projects I have worked on. I currently work for Mock Reasearch and been working for 2 years. I have created various projects/apps for my clients which includes an app for Ecommerce business, and app for Finance, an app for Restaurant and an app for Library. See images below in Deployed Projects section. <br>
+Worked with HTML, CSS, Javascript, NodeJS, ReactJS and other web technologies.
 
-is the first code refactor to use semantic elements. Learned new elements for example: article tag, aside tag, header, footer,main.
+## Link to my portfolio
 
-Technologies Used
+
+
+## Deployed Projects
+Below are some of my deployed projects:
+* My Portfolio 
+
+   <img src="CSS/Images/PortfolioScreenshot.png" alt="Portfolio Image" width="300px" height="800px"> </a>
+
+* Ecommerce App 
+
+   <img src="CSS/Images/ecommerceApp.jpg" alt="E-Commerce App Image"> </a>
+* Finance App 
+
+   <img src="CSS/Images/financeApp.png" alt="Finance App Image"> </a>
+* Restaurant App 
+
+    <img src="CSS/Images/restaurantApp.jpg" alt=" Restaurant App Image"> </a>
+* Library App 
+
+    <img src="CSS/Images/libraryApp.jpg" alt="Library App Image"> </a>
+
+### Technologies Used
     - HTML
     - CSS
+    - Javascript
 
-Installation
+### Installation
 
+ - Clone the repository
+ - Navigate to the top directory
+ - Open the `index.html` in the browser
 
-Usage
-This code refactor was done to have more semantic structure of the website. Following images ahve been used in the page: 
+### Usage
 
+The Apps/projects can be used to perform multiple activities such as buying at ecommerce website, finance calculator, restaurant oredering, choosing library books online etc.
 
-License 
- MIT
+#### License 
+ MIT (https://choosealicense.com/licenses/mit/)
